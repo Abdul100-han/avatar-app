@@ -1,7 +1,7 @@
 import { Suspense, useState, useRef, useEffect } from 'react'
 import { Canvas } from '@react-three/fiber'
 import { OrbitControls, useGLTF, Environment } from '@react-three/drei'
-import { Box, CircularProgress, Typography } from '@mui/material'
+import { Box, Typography } from '@mui/material'
 import AvatarViewerControls from './AvatarViewerControls'
 import * as THREE from 'three'
 
@@ -53,7 +53,7 @@ const AvatarViewer = ({
   onClearScene,
   onToggleClothingVisibility,
 }: AvatarViewerProps) => {
-  const [isLoading, setIsLoading] = useState(false)
+
   const [clothingColor, setClothingColor] = useState('#ffffff')
   const controlsRef = useRef<any>(null)
 
@@ -137,7 +137,6 @@ const AvatarViewer = ({
         onClothingColorChange={setClothingColor}
         hasAvatar={!!avatarUrl}
         hasClothing={!!clothingUrl}
-        isLoading={isLoading}
       />
     </Box>
   )
