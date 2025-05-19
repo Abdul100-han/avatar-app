@@ -1,36 +1,81 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Threadswift 3D Avatar Fitting App
+
+A web application for uploading and visualizing 3D avatars with clothing using Next.js, React Three Fiber, and Material UI.
+
+## Features
+
+- Upload 3D avatar models (GLB/GLTF format)
+- Upload 3D clothing models (GLB/GLTF format)
+- Visualize avatar with clothing
+- Toggle clothing visibility
+- Change clothing color
+- Interactive 3D scene with orbit controls
+- Responsive Material UI interface
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
+- Node.js (v14 or later)
+- Yarn or npm
+
+### Installation
+
+1. Clone the repository:
 ```bash
-npm run dev
-# or
+git clone https://github.com/Abdul100-han/avatar-app.git
+cd threadswift-avatar-app
+Install dependencies:
+
+bash
+yarn install
+Run the development server:
+
+bash
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Open http://localhost:3000 in your browser
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Usage
+Click "Upload Avatar" to select a GLB/GLTF file for the avatar
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Click "Upload Clothing" to select a GLB/GLTF file for the clothing
 
-## Learn More
+Use the controls in the "Adjust" tab to:
 
-To learn more about Next.js, take a look at the following resources:
+Toggle clothing visibility
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Change clothing color
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Reset the camera view
 
-## Deploy on Vercel
+Clear the scene
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Built With
+Next.js - React framework
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+React Three Fiber - Three.js for React
+
+Material UI - React UI component library
+
+Three.js - 3D library
+
+Screenshots
+Screenshot 1
+Screenshot 2
+
+
+
+This implementation includes all the required features:
+
+1. Upload buttons for both avatar and clothing (GLB/GLTF)
+2. 3D viewport with OrbitControls
+3. UI panel with all required controls using Material UI
+4. Basic auto-fit functionality
+5. Proper lighting setup
+6. Camera controls (orbit, zoom, pan)
+
+Bonus features included:
+1. Drag-and-drop upload
+2. Color picker for clothing
+4. Responsive design
